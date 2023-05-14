@@ -1,0 +1,152 @@
+body {
+  font-family: var(--font-main);
+  font-size: 18px;
+  overflow-x: hidden;
+  transition: background-color 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+// скидання налаштувань браузера
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+// базові параметри зображень
+img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+// приховування тексту
+.hiden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// SUPPORT SECTION
+.support {
+  width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .support {
+    padding-top: 0;
+    margin-top: 86px;
+  }
+}
+
+.support-container {
+  display: block;
+  justify-content: center;
+  align-items: start;
+  padding-top: 24px;
+  width: 100%;
+  height: 352px;
+
+  background: radial-gradient(
+      183.6% 183.01% at 59.76% -23.42%,
+      #4f2ee8 18.03%,
+      #ffffff 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 10px 10px rgba(245, 245, 247, 0.1);
+  border-radius: 16px;
+  outline: 2px solid tomato;
+  align-items: center;
+  padding: 8px 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .support-container {
+    height: 490px;
+  }
+}
+
+.support-render {
+  display: flex;
+  flex-direction: column;
+}
+
+.support-ukraine {
+  color: #ffffff;
+  margin-right: 12px;
+}
+.support-button {
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  background-color: red;
+
+  border-radius: 50%;
+  transition: opacity 0.3s linear, visibility 0.3s linear,
+    background-color 0.3s linear;
+
+  bottom: 100px;
+  right: 20px;
+}
+.support-icon {
+  background-color: #4f2ee8;
+}
+
+.support-emblem {
+  display: flex;
+  outline: 2px solid tomato;
+}
+
+// налаштування контейнерів
+@media screen and (min-width: 300px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    // outline: 1px solid red;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
