@@ -1,8 +1,4 @@
-import {
-  getCategoriesList,
-  mainGalleryCategory,
-  mainGallery,
-} from './API-main-gallary';
+import { getCategoriesList, mainGalleryCategory, mainGallery } from './API-main-gallary';
 import { renderGallery, renderRowGallery } from './render-main-gallery';
 import refs from './refs';
 
@@ -12,8 +8,7 @@ function createMarkupCategoriesList(categories) {
     .map(
       ({ list_name }) =>
         `<li class="category-list-item"><button type="button" class="category">${list_name}</button></li>`
-    )
-    .join('');
+    ).join('');
 }
 
 const listFillingError =
